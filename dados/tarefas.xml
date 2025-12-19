@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tarefas>
+  <tarefa>
+    <titulo>Teste_123</titulo>
+    <descricao>teste_123_Desc</descricao>
+    <dataCriacao>2025-11-07T19:36:11.676408700</dataCriacao>
+    <prioridade>MEDIA</prioridade>
+    <estado>CONCLUIDA</estado>
+  </tarefa>
+  <tarefa>
+    <titulo>Teste_1</titulo>
+    <descricao>Teste_1_desc</descricao>
+    <dataCriacao>2025-11-07T19:37:17.364280800</dataCriacao>
+    <prioridade>ALTA</prioridade>
+    <estado>EM_PROGRESSO</estado>
+  </tarefa>
+  <tarefa>
+    <titulo>Teste_3</titulo>
+    <descricao>Teste_3_desc</descricao>
+    <dataCriacao>2025-11-07T19:37:29.184832300</dataCriacao>
+    <prioridade>BAIXA</prioridade>
+    <estado>PENDENTE</estado>
+  </tarefa>
+</tarefas>
