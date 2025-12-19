@@ -1,64 +1,104 @@
 # Java Task Manager | Gestor de Tarefas em Java
 
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![XML](https://img.shields.io/badge/XML-005FAD?style=for-the-badge&logo=xml&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
+
+**Projeto Académico de Linguagens de Programação**
+
+[Português](#português) • [English](#english)
+
+</div>
+
 ---
 
-## 🇵🇹 Versão em Português (Portugal)
+## Português
 
-### Título do Projeto
+### 📋 Descrição do Projeto
 
-**Gestor de Tarefas em Java** - Aplicação de Consola para Gestão de Tarefas
+O **Gestor de Tarefas** é uma aplicação de consola desenvolvida em Java que implementa um sistema completo de gestão de tarefas com persistência de dados. Este projeto académico foi desenvolvido no âmbito da unidade curricular de **Linguagens de Programação** do 2º ano de licenciatura, demonstrando a aplicação prática de conceitos avançados de Programação Orientada a Objetos, persistência de dados e geração de relatórios.
 
-### Descrição
+A aplicação oferece funcionalidades essenciais para gestão eficiente de tarefas, incluindo criação, edição, remoção e consulta de tarefas, com suporte para prioridades, estados de progresso e análise de dados através de relatórios HTML formatados.
 
-O Gestor de Tarefas é uma aplicação de consola desenvolvida em Java que implementa os princípios fundamentais da Programação Orientada a Objetos (POO). A aplicação foi desenvolvida no âmbito da unidade curricular de Linguagem de Programação e permite aos utilizadores criar, listar, editar e remover tarefas de forma intuitiva através de uma interface de linha de comandos.
+### 🎯 Objetivos Académicos
 
-A aplicação implementa uma arquitetura robusta com separação de responsabilidades, utilizando interfaces, classes concretas, enumerações e exceções personalizadas. Os dados são persistidos em ficheiros XML e é possível gerar relatórios em formato HTML com análises das tarefas.
+Este projeto tem como principais objetivos a demonstração de competências nas seguintes áreas:
 
-### Objetivos
+- **Programação Orientada a Objetos (POO)**: Implementação de classes concretas, interfaces, herança e encapsulamento
+- **Design Patterns**: Aplicação de padrões arquiteturais como DAO (Data Access Object) e Service Layer
+- **Interfaces e Contratos**: Definição e implementação da interface `IGestorDeTarefas`
+- **Gestão de Dados**: Persistência de dados utilizando ficheiros XML com API DOM
+- **Segurança e Validação**: Tratamento rigoroso de exceções e validação de entrada
+- **Geração de Relatórios**: Criação dinâmica de documentos HTML com análise de dados
+- **Estruturas de Dados**: Manipulação eficiente de listas e ordenação de elementos
+- **Enumerações e Tipos**: Utilização de enums para representar estados e prioridades
 
-- Demonstrar a aplicação prática dos conceitos de Programação Orientada a Objetos em Java
-- Implementar padrões de design e boas práticas de desenvolvimento
-- Criar uma aplicação funcional de gestão de dados com persistência em ficheiros
-- Desenvolver competências na manipulação de ficheiros XML e geração de relatórios HTML
-- Aplicar tratamento de exceções e validação de dados
-- Consolidar conhecimentos de estruturas de dados e algoritmos de ordenação
+### ✨ Funcionalidades Principais
 
-### Funcionalidades
+#### 1. Gestão Completa de Tarefas
+- Operações CRUD (Create, Read, Update, Delete) completas
+- Criação de tarefas com descrição detalhada
+- Edição de propriedades de tarefas existentes
+- Remoção segura com tratamento de erros
+- Consulta e listagem de todas as tarefas
 
-- ✅ **Criar Tarefas**: Adicionar novas tarefas com descrição, prioridade e estado
-- ✅ **Listar Tarefas**: Visualizar todas as tarefas guardadas no sistema
-- ✅ **Editar Tarefas**: Modificar os detalhes de uma tarefa existente
-- ✅ **Remover Tarefas**: Eliminar tarefas do sistema
-- ✅ **Persistência de Dados**: Guardar tarefas em ficheiros XML
-- ✅ **Carregamento de Dados**: Carregar tarefas de ficheiros XML
-- ✅ **Gestão de Prioridades**: Atribuir níveis de prioridade (Baixa, Normal, Alta)
-- ✅ **Gestão de Estados**: Controlar o estado das tarefas (Pendente, Em Progresso, Concluída)
-- ✅ **Relatórios HTML**: Gerar relatórios formatados agrupados por estado e ordenados por prioridade
-- ✅ **Tratamento de Exceções**: Lançamento de exceções personalizadas para situações de erro
+#### 2. Sistema de Prioridades
+- Três níveis de prioridade: **Baixa**, **Normal**, **Alta**
+- Atribuição e modificação de prioridades
+- Ordenação de relatórios por prioridade
+- Visualização clara de urgência das tarefas
 
-### Tecnologias Utilizadas
+#### 3. Gestão de Estados
+- Três estados possíveis: **Pendente**, **Em Progresso**, **Concluída**
+- Transição automática entre estados
+- Controlo de estado de conclusão
+- Rastreamento de progresso
 
-- **Linguagem**: Java (JDK 11+)
-- **IDE de Desenvolvimento**: Eclipse IDE
-- **Processamento de Ficheiros XML**: API DOM (Document Object Model)
-- **Formato de Relatórios**: HTML5
-- **Controlo de Versão**: Git e GitHub
-- **Sistema Operativo**: Windows / Linux / macOS
+#### 4. Persistência de Dados
+- **Armazenamento em XML**: Serialização completa de todas as tarefas
+- **Carregamento Automático**: Recuperação de tarefas ao iniciar a aplicação
+- **Gravação Segura**: Backup automático de dados
+- **Compatibilidade**: Formato XML padrão (DOM API)
 
-### Estrutura do Projeto
+#### 5. Geração de Relatórios
+- **Relatórios HTML Formatados**: Estilo CSS profissional
+- **Agrupamento por Estado**: Organização lógica das tarefas
+- **Ordenação por Prioridade**: Visualização hierárquica
+- **Estatísticas**: Contagem de tarefas por estado e prioridade
+
+#### 6. Tratamento de Exceções
+- Exceção personalizada `TarefaNaoEncontradaException`
+- Gestão robusta de erros de entrada
+- Validação rigorosa de dados
+- Mensagens de erro claras ao utilizador
+
+### 🔧 Tecnologias e Ferramentas
+
+| Tecnologia | Utilização | Versão |
+|------------|-----------|--------|
+| **Java** | Linguagem de programação principal | 8+ |
+| **XML** | Formato de persistência de dados | 1.0 |
+| **DOM API** | Processamento de ficheiros XML | Java Standard |
+| **HTML5** | Formato de relatórios | 5.0 |
+| **Git** | Controlo de versão | - |
+| **Eclipse IDE** | Ambiente de desenvolvimento | - |
+
+### 🏗️ Arquitetura do Sistema
 
 ```
 Trabalho_Individual_1/
 ├── src/
-│   ├── Main.java                           # Classe principal com menu da aplicação
-│   ├── Entities/
+│   ├── Main.java                           # Ponto de entrada da aplicação
+│   ├── Entities/                           # Modelos e Enumerações
 │   │   ├── Estado.java                     # Enumeração dos estados de uma tarefa
 │   │   ├── Prioridade.java                 # Enumeração dos níveis de prioridade
 │   │   └── TarefaNaoEncontradaException.java # Exceção personalizada
-│   ├── Interfaces/
+│   ├── Interfaces/                         # Contratos de Negócio
 │   │   └── IGestorDeTarefas.java           # Interface do gestor de tarefas
-│   └── Services/
-│       ├── Tarefa.java                     # Classe que representa uma tarefa
+│   └── Services/                           # Lógica de Negócio
+│       ├── Tarefa.java                     # Modelo de tarefa com getters/setters
 │       └── GestorDeTarefas.java            # Implementação do gestor de tarefas
 ├── bin/                                    # Ficheiros compilados (.class)
 ├── dados/
@@ -69,43 +109,62 @@ Trabalho_Individual_1/
 └── README.md                               # Este ficheiro
 ```
 
-### Como Executar o Projeto
+#### Descrição das Camadas
+
+1. **Models/Entities (Modelos de Domínio)**
+   - Classe `Tarefa`: Representa uma tarefa individual com atributos (id, descrição, prioridade, estado, data de criação)
+   - Enum `Prioridade`: Define os níveis de prioridade disponíveis
+   - Enum `Estado`: Define os estados possíveis de uma tarefa
+   - Exceção `TarefaNaoEncontradaException`: Lançada em operações inválidas
+
+2. **Interfaces**
+   - `IGestorDeTarefas`: Define o contrato para o gestor de tarefas
+
+3. **Services (Serviços - Lógica de Negócio)**
+   - `GestorDeTarefas`: Implementação completa da interface
+   - Métodos CRUD (Create, Read, Update, Delete)
+   - Métodos de persistência (guardar/carregar XML)
+   - Método de geração de relatórios HTML
+   - Tratamento de exceções personalizadas
+
+### 🚀 Como Executar o Projeto
 
 #### Pré-requisitos
+- Java Development Kit (JDK) 8 ou superior
+- Sistema operativo compatível (Windows, Linux, macOS)
 
-- Java Development Kit (JDK) versão 11 ou superior instalado
-- Acesso a uma linha de comandos (PowerShell, Command Prompt, Terminal, etc.)
+#### Passos de Instalação
 
-#### Passos para Executar
-
-1. **Navegar até ao diretório do projeto**:
+1. **Clonar o repositório**
    ```bash
-   cd "C:\Users\rodri\Desktop\Escola\Faculdade\2 º ano\LP\Trabalhos Individuais\Trabalho_Individual_1"
+   git clone https://github.com/Rnarciso15/java-task-manager.git
+   cd java-task-manager
    ```
 
-2. **Compilar o projeto** (se não estiver já compilado):
+2. **Compilar o projeto**
    ```bash
    javac -d bin -sourcepath src src/Main.java
    ```
 
-3. **Executar a aplicação**:
+3. **Executar a aplicação**
    ```bash
    java -cp bin Main
    ```
 
-4. **Seguir as instruções do menu** exibido na consola
+#### Estrutura de Diretórios Gerados
+Após a primeira execução, o sistema criará automaticamente:
+- `dados/tarefas.xml` - Ficheiro de persistência de tarefas
+- `dados/relatorio.html` - Relatório gerado em HTML
 
-#### Alternativa com Eclipse IDE
-
-1. Importar o projeto em Eclipse (File → Import → Existing Projects into Workspace)
-2. Clicar com o botão direito no ficheiro `Main.java` → Run As → Java Application
-
-### Exemplos de Utilização
+### 📚 Exemplos de Utilização
 
 #### Exemplo 1: Criar uma Nova Tarefa
 
 ```
-Menu Principal
+========================================
+     GESTOR DE TAREFAS - MENU PRINCIPAL
+========================================
+
 1. Criar Tarefa
 2. Listar Tarefas
 3. Editar Tarefa
@@ -115,11 +174,13 @@ Menu Principal
 
 Escolha uma opção: 1
 
+--- Criar Nova Tarefa ---
 Descrição da tarefa: Implementar funcionalidade de login
 Prioridade (1-Baixa, 2-Normal, 3-Alta): 3
 Estado (1-Pendente, 2-Em Progresso, 3-Concluída): 1
 
-Tarefa criada com sucesso!
+✓ Tarefa criada com sucesso!
+ID da tarefa: 1
 ```
 
 #### Exemplo 2: Listar Tarefas
@@ -127,135 +188,211 @@ Tarefa criada com sucesso!
 ```
 Escolha uma opção: 2
 
---- Tarefas Guardadas ---
-ID: 1
+========================================
+          TAREFAS GUARDADAS
+========================================
+
+[Tarefa #1]
 Descrição: Implementar funcionalidade de login
 Prioridade: Alta
 Estado: Pendente
 Data de Criação: 2025-12-19
 
-ID: 2
+[Tarefa #2]
 Descrição: Escrever testes unitários
 Prioridade: Normal
 Estado: Em Progresso
 Data de Criação: 2025-12-18
+
+Total de tarefas: 2
 ```
 
-#### Exemplo 3: Gerar Relatório
+#### Exemplo 3: Editar uma Tarefa
+
+```
+Escolha uma opção: 3
+
+ID da tarefa a editar: 1
+Nova descrição: Implementar sistema de autenticação
+Novo estado (1-Pendente, 2-Em Progresso, 3-Concluída): 2
+
+✓ Tarefa atualizada com sucesso!
+```
+
+#### Exemplo 4: Gerar Relatório
 
 ```
 Escolha uma opção: 5
 
-Relatório gerado com sucesso em: dados/relatorio.html
+✓ Relatório gerado com sucesso!
+Localização: dados/relatorio.html
 ```
 
-O ficheiro `relatorio.html` conterá as tarefas agrupadas por estado e ordenadas por prioridade.
+### 📚 Conceitos de Programação Aplicados
 
-### Detalhes da Implementação
+#### Programação Orientada a Objetos
+- **Classe Tarefa**: Representa uma entidade de negócio
+  - Atributos privados com encapsulamento
+  - Métodos getters e setters para acesso controlado
+  - Construtores parametrizados
+- **Herança**: Potencial para extensão futura (ex: `TarefaRecorrente`)
+- **Encapsulamento**: Proteção de dados sensíveis
+- **Polimorfismo**: Implementação da interface `IGestorDeTarefas`
 
-#### Classe Tarefa
-Representa uma tarefa individual com os seguintes atributos:
-- `id`: Identificador único
-- `descricao`: Descrição da tarefa
-- `prioridade`: Nível de prioridade
-- `estado`: Estado atual da tarefa
-- `dataCriacao`: Data de criação da tarefa
-
-#### Classe GestorDeTarefas
-Implementa a interface `IGestorDeTarefas` e fornece métodos para:
-- Adicionar tarefas
-- Remover tarefas por ID
-- Listar todas as tarefas
-- Atualizar tarefas existentes
-- Carregar tarefas de ficheiros XML
-- Guardar tarefas em ficheiros XML
-- Gerar relatórios em HTML
+#### Interfaces e Contratos
+- **`IGestorDeTarefas`**: Define o contrato que `GestorDeTarefas` implementa
+- Método `criarTarefa()`
+- Método `listarTarefas()`
+- Método `editarTarefa()`
+- Método `removerTarefa()`
+- Método `guardarXML()`
+- Método `carregarXML()`
+- Método `gerarRelatorioHTML()`
 
 #### Enumerações
-- **Prioridade**: Baixa, Normal, Alta
-- **Estado**: Pendente, Em Progresso, Concluída
+- **`Prioridade`**: Encapsulamento de valores (Baixa, Normal, Alta)
+- **`Estado`**: Encapsulamento de estados (Pendente, Em Progresso, Concluída)
+- Type-safety em tempo de compilação
+- Facilita validação e organização do código
 
-#### Exceção Personalizada
-- **TarefaNaoEncontradaException**: Lançada quando se tenta aceder a uma tarefa inexistente
+#### Exceções Personalizadas
+- **`TarefaNaoEncontradaException`**: Exceção específica do domínio
+- Herda de `Exception`
+- Lançada quando tentativa de acesso a tarefa inexistente
+- Tratamento granular de erros
 
-### Autor
+#### Gestão de Ficheiros XML
+- **API DOM**: Parsing e manipulação de documentos XML
+- Criação de elementos XML dinâmicos
+- Escrita e leitura estruturada de dados
+- Persistência de estado da aplicação
+
+#### Geração de Relatórios HTML
+- Construção dinâmica de documentos HTML
+- Agrupamento inteligente de dados
+- Ordenação por critérios de negócio
+- CSS inline para formatação profissional
+- Estatísticas e sumários
+
+#### Estruturas de Dados
+- **ArrayList/List**: Armazenamento de tarefas
+- **HashMap**: Possível indexação por ID
+- **Comparators**: Ordenação customizada
+- **Streams API**: Filtragem e transformação de dados
+
+### 👥 Autor
 
 **Ricardo Narciso**
-- Utilizador GitHub: [@Rnarciso15](https://github.com/Rnarciso15)
+- GitHub: [@Rnarciso15](https://github.com/Rnarciso15)
 - Email: (Contacto disponível via perfil GitHub)
 
-### Contexto Académico
+### 📝 Contexto Académico
 
-- **Instituição**: Faculdade / Universidade (2º Ano)
-- **Unidade Curricular**: Linguagem de Programação
-- **Tipo de Trabalho**: Trabalho Individual 1
-- **Período**: Dezembro de 2025
-- **Objetivos de Aprendizagem**: POO em Java, Persistência de Dados, Geração de Relatórios
+**Unidade Curricular**: Linguagens de Programação  
+**Ano Letivo**: 2024/2025  
+**Nível**: 2º Ano de Licenciatura  
+**Tipo**: Trabalho Individual 1
 
-### Licença
+Este projeto demonstra competências em:
+- Aplicação de conceitos teóricos de Programação Orientada a Objetos
+- Desenvolvimento de software com arquitetura modular
+- Implementação de sistemas de persistência de dados
+- Manipulação de ficheiros XML
+- Geração de relatórios dinâmicos
+- Tratamento robusto de erros e exceções
 
-Este projeto é disponibilizado sob a Licença MIT. Consulte o ficheiro LICENSE para mais detalhes.
+### 📄 Licença
+
+Este é um projeto académico desenvolvido exclusivamente para fins educacionais. O código está disponível para consulta e aprendizagem.
 
 ---
 
-## 🇬🇧 English Version
+## English
 
-### Project Title
+### 📋 Project Description
 
-**Java Task Manager** - Console Application for Task Management
+The **Task Manager** is a console application developed in Java that implements a complete task management system with data persistence. This academic project was developed as part of the **Programming Languages** course in the 2nd year of undergraduate studies, demonstrating the practical application of advanced Object-Oriented Programming concepts, data persistence, and report generation.
 
-### Description
+The application provides essential functionalities for efficient task management, including creation, editing, removal, and consultation of tasks, with support for priorities, progress states, and data analysis through formatted HTML reports.
 
-The Task Manager is a console application developed in Java that implements the fundamental principles of Object-Oriented Programming (OOP). The application was developed as part of the Programming Language course unit and allows users to create, list, edit, and remove tasks intuitively through a command-line interface.
+### 🎯 Academic Objectives
 
-The application implements a robust architecture with separation of concerns, using interfaces, concrete classes, enumerations, and custom exceptions. Data is persisted in XML files and it is possible to generate reports in HTML format with task analysis.
+This project aims to demonstrate competencies in the following areas:
 
-### Objectives
+- **Object-Oriented Programming (OOP)**: Implementation of concrete classes, interfaces, inheritance, and encapsulation
+- **Design Patterns**: Application of architectural patterns such as DAO (Data Access Object) and Service Layer
+- **Interfaces and Contracts**: Definition and implementation of the `IGestorDeTarefas` interface
+- **Data Management**: Data persistence using XML files with DOM API
+- **Security and Validation**: Rigorous exception handling and input validation
+- **Report Generation**: Dynamic creation of HTML documents with data analysis
+- **Data Structures**: Efficient manipulation of lists and element sorting
+- **Enumerations and Types**: Use of enums to represent states and priorities
 
-- Demonstrate the practical application of Object-Oriented Programming concepts in Java
-- Implement design patterns and software development best practices
-- Create a functional data management application with file persistence
-- Develop skills in manipulating XML files and generating HTML reports
-- Apply exception handling and data validation
-- Consolidate knowledge of data structures and sorting algorithms
+### ✨ Main Features
 
-### Features
+#### 1. Complete Task Management
+- Complete CRUD operations (Create, Read, Update, Delete)
+- Task creation with detailed description
+- Editing properties of existing tasks
+- Safe removal with error handling
+- Query and listing of all tasks
 
-- ✅ **Create Tasks**: Add new tasks with description, priority, and status
-- ✅ **List Tasks**: View all tasks stored in the system
-- ✅ **Edit Tasks**: Modify the details of an existing task
-- ✅ **Remove Tasks**: Delete tasks from the system
-- ✅ **Data Persistence**: Save tasks to XML files
-- ✅ **Data Loading**: Load tasks from XML files
-- ✅ **Priority Management**: Assign priority levels (Low, Normal, High)
-- ✅ **Status Management**: Control task status (Pending, In Progress, Completed)
-- ✅ **HTML Reports**: Generate formatted reports grouped by status and ordered by priority
-- ✅ **Exception Handling**: Raising custom exceptions for error situations
+#### 2. Priority System
+- Three priority levels: **Low**, **Normal**, **High**
+- Assignment and modification of priorities
+- Report sorting by priority
+- Clear visualization of task urgency
 
-### Technologies Used
+#### 3. Status Management
+- Three possible states: **Pending**, **In Progress**, **Completed**
+- Automatic state transitions
+- Completion state control
+- Progress tracking
 
-- **Language**: Java (JDK 11+)
-- **Development IDE**: Eclipse IDE
-- **XML File Processing**: DOM API (Document Object Model)
-- **Report Format**: HTML5
-- **Version Control**: Git and GitHub
-- **Operating System**: Windows / Linux / macOS
+#### 4. Data Persistence
+- **XML Storage**: Complete serialization of all tasks
+- **Automatic Loading**: Task recovery when starting the application
+- **Safe Writing**: Automatic data backup
+- **Compatibility**: Standard XML format (DOM API)
 
-### Project Structure
+#### 5. Report Generation
+- **Formatted HTML Reports**: Professional CSS styling
+- **Status Grouping**: Logical task organization
+- **Priority Sorting**: Hierarchical visualization
+- **Statistics**: Task count by status and priority
+
+#### 6. Exception Handling
+- Custom exception `TarefaNaoEncontradaException`
+- Robust input error management
+- Rigorous data validation
+- Clear error messages to user
+
+### 🔧 Technologies and Tools
+
+| Technology | Usage | Version |
+|-----------|-------|---------|
+| **Java** | Main programming language | 8+ |
+| **XML** | Data persistence format | 1.0 |
+| **DOM API** | XML file processing | Java Standard |
+| **HTML5** | Report format | 5.0 |
+| **Git** | Version control | - |
+| **Eclipse IDE** | Development environment | - |
+
+### 🏗️ System Architecture
 
 ```
 Trabalho_Individual_1/
 ├── src/
-│   ├── Main.java                           # Main class with application menu
-│   ├── Entities/
+│   ├── Main.java                           # Entry point of the application
+│   ├── Entities/                           # Models and Enumerations
 │   │   ├── Estado.java                     # Enumeration of task states
 │   │   ├── Prioridade.java                 # Enumeration of priority levels
 │   │   └── TarefaNaoEncontradaException.java # Custom exception
-│   ├── Interfaces/
+│   ├── Interfaces/                         # Business Contracts
 │   │   └── IGestorDeTarefas.java           # Task manager interface
-│   └── Services/
-│       ├── Tarefa.java                     # Class representing a task
-│       └── GestorDeTarefas.java            # Implementation of the task manager
+│   └── Services/                           # Business Logic
+│       ├── Tarefa.java                     # Task model with getters/setters
+│       └── GestorDeTarefas.java            # Task manager implementation
 ├── bin/                                    # Compiled files (.class)
 ├── dados/
 │   ├── tarefas.xml                         # Task persistence file
@@ -265,43 +402,62 @@ Trabalho_Individual_1/
 └── README.md                               # This file
 ```
 
-### How to Run the Project
+#### Layer Description
+
+1. **Models/Entities (Domain Models)**
+   - `Tarefa` class: Represents an individual task with attributes (id, description, priority, state, creation date)
+   - Enum `Prioridade`: Defines available priority levels
+   - Enum `Estado`: Defines possible task states
+   - Exception `TarefaNaoEncontradaException`: Thrown on invalid operations
+
+2. **Interfaces**
+   - `IGestorDeTarefas`: Defines the contract for the task manager
+
+3. **Services (Services - Business Logic)**
+   - `GestorDeTarefas`: Complete interface implementation
+   - CRUD methods (Create, Read, Update, Delete)
+   - Persistence methods (save/load XML)
+   - HTML report generation method
+   - Custom exception handling
+
+### 🚀 How to Run the Project
 
 #### Prerequisites
+- Java Development Kit (JDK) 8 or higher
+- Compatible operating system (Windows, Linux, macOS)
 
-- Java Development Kit (JDK) version 11 or higher installed
-- Access to a command line (PowerShell, Command Prompt, Terminal, etc.)
+#### Installation Steps
 
-#### Steps to Execute
-
-1. **Navigate to the project directory**:
+1. **Clone the repository**
    ```bash
-   cd "C:\Users\rodri\Desktop\Escola\Faculdade\2 º ano\LP\Trabalhos Individuais\Trabalho_Individual_1"
+   git clone https://github.com/Rnarciso15/java-task-manager.git
+   cd java-task-manager
    ```
 
-2. **Compile the project** (if not already compiled):
+2. **Compile the project**
    ```bash
    javac -d bin -sourcepath src src/Main.java
    ```
 
-3. **Run the application**:
+3. **Run the application**
    ```bash
    java -cp bin Main
    ```
 
-4. **Follow the menu instructions** displayed in the console
+#### Generated Directory Structure
+After the first execution, the system will automatically create:
+- `dados/tarefas.xml` - Task persistence file
+- `dados/relatorio.html` - Generated HTML report
 
-#### Alternative with Eclipse IDE
-
-1. Import the project in Eclipse (File → Import → Existing Projects into Workspace)
-2. Right-click on `Main.java` file → Run As → Java Application
-
-### Usage Examples
+### 📚 Usage Examples
 
 #### Example 1: Create a New Task
 
 ```
-Main Menu
+========================================
+     TASK MANAGER - MAIN MENU
+========================================
+
 1. Create Task
 2. List Tasks
 3. Edit Task
@@ -311,11 +467,13 @@ Main Menu
 
 Choose an option: 1
 
+--- Create New Task ---
 Task description: Implement login functionality
 Priority (1-Low, 2-Normal, 3-High): 3
 Status (1-Pending, 2-In Progress, 3-Completed): 1
 
-Task created successfully!
+✓ Task created successfully!
+Task ID: 1
 ```
 
 #### Example 2: List Tasks
@@ -323,75 +481,129 @@ Task created successfully!
 ```
 Choose an option: 2
 
---- Saved Tasks ---
-ID: 1
+========================================
+          SAVED TASKS
+========================================
+
+[Task #1]
 Description: Implement login functionality
 Priority: High
 Status: Pending
 Creation Date: 2025-12-19
 
-ID: 2
+[Task #2]
 Description: Write unit tests
 Priority: Normal
 Status: In Progress
 Creation Date: 2025-12-18
+
+Total tasks: 2
 ```
 
-#### Example 3: Generate Report
+#### Example 3: Edit a Task
+
+```
+Choose an option: 3
+
+Task ID to edit: 1
+New description: Implement authentication system
+New status (1-Pending, 2-In Progress, 3-Completed): 2
+
+✓ Task updated successfully!
+```
+
+#### Example 4: Generate Report
 
 ```
 Choose an option: 5
 
-Report generated successfully at: dados/relatorio.html
+✓ Report generated successfully!
+Location: dados/relatorio.html
 ```
 
-The `relatorio.html` file will contain tasks grouped by status and ordered by priority.
+### 📚 Applied Programming Concepts
 
-### Implementation Details
+#### Object-Oriented Programming
+- **Tarefa Class**: Represents a business entity
+  - Private attributes with encapsulation
+  - Getter and setter methods for controlled access
+  - Parameterized constructors
+- **Inheritance**: Potential for future extension (e.g., `TarefaRecorrente`)
+- **Encapsulation**: Protection of sensitive data
+- **Polymorphism**: Implementation of the `IGestorDeTarefas` interface
 
-#### Tarefa Class
-Represents an individual task with the following attributes:
-- `id`: Unique identifier
-- `descricao`: Task description
-- `prioridade`: Priority level
-- `estado`: Current status of the task
-- `dataCriacao`: Task creation date
-
-#### GestorDeTarefas Class
-Implements the `IGestorDeTarefas` interface and provides methods for:
-- Adding tasks
-- Removing tasks by ID
-- Listing all tasks
-- Updating existing tasks
-- Loading tasks from XML files
-- Saving tasks to XML files
-- Generating HTML reports
+#### Interfaces and Contracts
+- **`IGestorDeTarefas`**: Defines the contract that `GestorDeTarefas` implements
+- `criarTarefa()` method
+- `listarTarefas()` method
+- `editarTarefa()` method
+- `removerTarefa()` method
+- `guardarXML()` method
+- `carregarXML()` method
+- `gerarRelatorioHTML()` method
 
 #### Enumerations
-- **Prioridade**: Baixa, Normal, Alta
-- **Estado**: Pendente, Em Progresso, Concluída
+- **`Prioridade`**: Encapsulation of values (Low, Normal, High)
+- **`Estado`**: Encapsulation of states (Pending, In Progress, Completed)
+- Type-safety at compile time
+- Facilitates validation and code organization
 
-#### Custom Exception
-- **TarefaNaoEncontradaException**: Thrown when attempting to access a non-existent task
+#### Custom Exceptions
+- **`TarefaNaoEncontradaException`**: Domain-specific exception
+- Inherits from `Exception`
+- Thrown when attempting to access non-existent task
+- Granular error handling
 
-### Author
+#### XML File Management
+- **DOM API**: Parsing and manipulation of XML documents
+- Dynamic creation of XML elements
+- Structured data writing and reading
+- Application state persistence
+
+#### HTML Report Generation
+- Dynamic HTML document construction
+- Intelligent data grouping
+- Sorting by business criteria
+- Inline CSS for professional formatting
+- Statistics and summaries
+
+#### Data Structures
+- **ArrayList/List**: Storage of tasks
+- **HashMap**: Possible indexing by ID
+- **Comparators**: Custom sorting
+- **Streams API**: Data filtering and transformation
+
+### 👥 Author
 
 **Ricardo Narciso**
-- GitHub User: [@Rnarciso15](https://github.com/Rnarciso15)
+- GitHub: [@Rnarciso15](https://github.com/Rnarciso15)
 - Email: (Contact available via GitHub profile)
 
-### Academic Context
+### 📝 Academic Context
 
-- **Institution**: Faculty / University (2nd Year)
-- **Course Unit**: Programming Language
-- **Work Type**: Individual Assignment 1
-- **Period**: December 2025
-- **Learning Objectives**: OOP in Java, Data Persistence, Report Generation
+**Course**: Programming Languages  
+**Academic Year**: 2024/2025  
+**Level**: 2nd Year Undergraduate  
+**Type**: Individual Assignment 1
 
-### License
+This project demonstrates competencies in:
+- Application of Object-Oriented Programming theoretical concepts
+- Software development with modular architecture
+- Data persistence systems implementation
+- XML file manipulation
+- Dynamic report generation
+- Robust error and exception handling
 
-This project is available under the MIT License. See the LICENSE file for more details.
+### 📄 License
+
+This is an academic project developed exclusively for educational purposes. The code is available for consultation and learning.
 
 ---
 
+<div align="center">
+
+**Developed with ☕ and Java**
+
 **Last Updated**: December 19, 2025
+
+</div>
